@@ -9,39 +9,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a097e48c-2aa2-424c-962a-4397c3398ff1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/CommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/AddUserCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/DefaultCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/LoginCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/LogoutCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/ItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/entity/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/entity/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/service/CommonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/error/error_404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/error/error_500.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" afterDir="false" />
+    <list default="true" id="a097e48c-2aa2-424c-962a-4397c3398ff1" name="Changes" comment="f">
+      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/pool/DBConnectionPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/836e466f-c39c-473e-9c17-55a5c5b7b0fe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/836e466f-c39c-473e-9c17-55a5c5b7b0fe/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/836e466f-c39c-473e-9c17-55a5c5b7b0fe/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/836e466f-c39c-473e-9c17-55a5c5b7b0fe/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/836e466f-c39c-473e-9c17-55a5c5b7b0fe/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a2191e56-b094-43e9-ba06-02cb152da1e4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a2191e56-b094-43e9-ba06-02cb152da1e4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/command/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/CommandType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/AddUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/AddUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/DefaultCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/DefaultCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/command/impl/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/entity/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/entity/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/wd/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/wd/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +48,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -75,6 +71,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -84,31 +83,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 10.1.24.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.24.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.wd.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\morji\IdeaProjects\WD\WD\src\main\webapp\pages\registration" />
       <recent name="C:\Users\morji\IdeaProjects\WD\WD\src\main\webapp" />
     </key>
   </component>
@@ -209,11 +209,26 @@
       <option name="presentableId" value="Default" />
       <updated>1716987378637</updated>
       <workItem from="1716987379727" duration="177000" />
-      <workItem from="1716987565328" duration="14212000" />
+      <workItem from="1716987565328" duration="36280000" />
+      <workItem from="1717418673155" duration="23676000" />
+      <workItem from="1718121106112" duration="99000" />
     </task>
+    <task id="LOCAL-00001" summary="f">
+      <option name="closed" value="true" />
+      <created>1717022947746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717022947746</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="f" />
+    <option name="LAST_COMMIT_MESSAGE" value="f" />
   </component>
 </project>

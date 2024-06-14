@@ -1,22 +1,26 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Welcome</title>
 </head>
 <body>
-
-<br/>
-<form action="controller">
-    <input type="hidden" name="command" value="login"/>
-    Login: <input type="text" name="login" value=""/>
-    <br/>
-    Password: <input type="password" name="pass" value=""/>
-    <br/>
-    <input type="submit" name="sub" value="Push"/>
-    <br/>
-    ${login_msg}
+<h1>Welcome to the Application</h1>
+<form action="controller" method="post">
+    <div>
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required>
+    </div>
+    <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" required>
+    </div>
+    <div>
+        <input type="hidden" name="command" value="login">
+        <button type="submit">Sign In</button>
+    </div>
+    <div>
+        <p>Don't have an account? <a href="pages/register.jsp">Register Here</a></p>
+    </div>
 </form>
-
 </body>
 </html>
