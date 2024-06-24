@@ -4,7 +4,8 @@
     <title>Welcome</title>
 </head>
 <body>
-<h1>Welcome to the Application</h1>
+<h1>WELCOME</h1>
+<p> </p>
 <form action="controller" method="post">
     <div>
         <label for="login">Login:</label>
@@ -16,10 +17,10 @@
     </div>
     <div>
         <input type="hidden" name="command" value="login">
-        <button type="submit">Sign In</button>
+        <button type="submit">Sign in</button>
     </div>
     <div>
-        <p>Don't have an account? <a href="pages/register.jsp">Register Here</a></p>
+        <p>Don't have an account? <a href="pages/register.jsp">Register here</a></p>
     </div>
 </form>
 </body>

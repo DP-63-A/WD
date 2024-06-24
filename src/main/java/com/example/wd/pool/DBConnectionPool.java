@@ -5,16 +5,16 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 import java.io.InputStream;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 public class DBConnectionPool {
     private static volatile DBConnectionPool instance;
-    private static volatile Connection connection;
-    private static final ReentrantLock lock = new ReentrantLock();
-
+    private BlockingQueue<Connection> connectionPool;
     private String url;
     private String username;
     private String password;
+    private int poolSize = 10;
 
     private DBConnectionPool() {
         try (InputStream input = getClass().getClassLoader().getResourceAsStream("db.properties")) {
@@ -26,6 +26,11 @@ public class DBConnectionPool {
             this.password = properties.getProperty("jdbc.password");
 
             Class.forName(properties.getProperty("jdbc.driverClassName"));
+
+            connectionPool = new ArrayBlockingQueue<>(poolSize);
+            for (int i = 0; i < poolSize; i++) {
+                connectionPool.add(createNewConnection());
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -33,31 +38,30 @@ public class DBConnectionPool {
 
     public static DBConnectionPool getInstance() {
         if (instance == null) {
-            lock.lock();
-            try {
+            synchronized (DBConnectionPool.class) {
                 if (instance == null) {
                     instance = new DBConnectionPool();
                 }
-            } finally {
-                lock.unlock();
             }
         }
         return instance;
     }
 
+    private Connection createNewConnection() throws SQLException {
+        return DriverManager.getConnection(url, username, password);
+    }
+
     public Connection getConnection() {
-        if (connection == null) {
-            lock.lock();
-            try {
-                if (connection == null) {
-                    connection = DriverManager.getConnection(url, username, password);
-                }
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            } finally {
-                lock.unlock();
-            }
+        try {
+            return connectionPool.take();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
-        return connection;
+    }
+
+    public void releaseConnection(Connection connection) {
+        if (connection != null) {
+            connectionPool.offer(connection);
+        }
     }
 }

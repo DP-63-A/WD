@@ -11,6 +11,21 @@
     <title>Main</title>
 </head>
 <body>
-Hello = ${user}
+Hello, ${user}
+<p> </p>
+<form action="controller" method="get">
+    <input type="hidden" name="command" value="logout">
+    <input type="submit" value="Logout">
+</form>
+<p> </p>
+<form action="controller" method="get">
+    <input type="hidden" name="command" value="deleteUserPage">
+    <input type="submit" value="Delete User">
+</form>
+<p> </p>
+<form action="controller" method="get">
+    <input type="hidden" name="command" value="viewUsers">
+    <input type="submit" value="View Users">
+</form>
 </body>
 </html>

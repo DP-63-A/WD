@@ -23,16 +23,24 @@ public class Controller extends HttpServlet {
         response.setContentType("text/html");
         String commandStr = request.getParameter("command");
         logger.debug("Received command: {}", commandStr);
-        Command command = CommandType.define(commandStr);
-        String page = command.execute(request);
+        Command command;
+        String page;
 
-        logger.debug("Forwarding to page: {}", page);
-        request.getRequestDispatcher(page).forward(request, response);
+        try {
+            command = CommandType.define(commandStr);
+            page = command.execute(request);
+            logger.debug("Forwarding to: {}", page);
+            request.getRequestDispatcher(page).forward(request, response);
+        } catch (Exception e) {
+            logger.error("Error processing command", e);
+            request.setAttribute("error_msg", "Internal server error");
+            request.getRequestDispatcher("/pages/error/error_500.jsp").forward(request, response);
+        }
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req, resp);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
     }
 
     public void destroy() {

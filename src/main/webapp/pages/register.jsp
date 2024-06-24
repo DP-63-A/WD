@@ -12,11 +12,14 @@
     <title>Register</title>
 </head>
 <body>
-<form action="controller" method="post">
+<h1>REGISTRATION</h1>
+<p>Please enter the required data</p>
+<p> </p>
+<form action="${pageContext.request.contextPath}/controller" method="post">
     <input type="hidden" name="command" value="add_user"/>
-    First Name: <input type="text" name="firstName" required/>
+    First name: <input type="text" name="firstName" required/>
     <br/>
-    Last Name: <input type="text" name="lastName" required/>
+    Last name: <input type="text" name="lastName" required/>
     <br/>
     Login: <input type="text" name="login" required/>
     <br/>
